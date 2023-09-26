@@ -1,3 +1,7 @@
+# Data idnore
+/datasets/187.zip
+/datasets/187
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
