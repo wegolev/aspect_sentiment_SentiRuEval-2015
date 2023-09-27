@@ -8,11 +8,11 @@ lxml
 scipy
 pandas
 tqdm
-youtokentome
 seaborn
 ipykernel
 ipython
 pyconll
-gensim==3.8.1
+gensim==3.8.3
 wget
-livelossplot==0.5.3
+livelossplot
+nltk

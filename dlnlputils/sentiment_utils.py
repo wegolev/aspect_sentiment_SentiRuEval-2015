@@ -318,7 +318,8 @@ def tag_statistics(model, converter, data):
 
 def plot_confusion_matrix(y_true, y_pred, classes, normalize=False, title=None, cmap=plt.cm.Blues):
    
-    cm     = confusion_matrix(y_true, y_pred, classes)
+    # cm     = confusion_matrix(y_true, y_pred, classes) # TypeError: too many positional arguments
+    cm = confusion_matrix(y_true, y_pred, labels=classes)
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
     
